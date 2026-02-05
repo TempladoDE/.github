@@ -2,6 +2,8 @@
 
 Moin! Wir sind Templado. Aus unseren Büros in **Grömitz** und am **Marktplatz in Neustadt in Holstein** entwickeln wir digitale Lösungen, die technologische Tiefe mit intuitiver Bedienbarkeit vereinen. Unser Fokus liegt auf dem [Neos CMS](https://www.neos.io/) Ökosystem. Wir bauen keine statischen Webseiten - wir entwickeln skalierbare Web-Infrastrukturen.
 
+![Templado](https://www.templado.de/_Resources/Persistent/0/a/c/3/0ac30a72c10870dafae91fe33b16ea7845a0109d/templado-webagentur-ostholstein-logo-weiss-160x59.webp)
+
 ## Technischer Fokus: Neos CMS & Modern Web
 
 Wir setzen konsequent auf **Neos 9**. Wir nutzen den Event-Source-basierten Ansatz des neuen Content Repositories, um komplexe Business-Logik und maximale Performance in Einklang zu bringen.
