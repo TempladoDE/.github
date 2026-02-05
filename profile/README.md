@@ -1,6 +1,8 @@
-# Templado.de - Neos CMS Entwicklung & Digitale Performance
+# Templado.de - Neos CMS & Laravel Entwicklung
 
-Moin! Wir sind [Templado](https://templado.de/), Webagentur Ostholstein. Aus unseren Büros in **Grömitz** und am **Marktplatz in Neustadt in Holstein** entwickeln wir digitale Lösungen, die technologische Tiefe mit intuitiver Bedienbarkeit vereinen. Unser Fokus liegt auf dem [Neos CMS](https://www.neos.io/) Ökosystem. Wir bauen keine statischen Webseiten - wir entwickeln skalierbare Web-Infrastrukturen. Auch für kleine Buden.
+Moin! 
+
+Wir sind [Templado](https://templado.de/), Webagentur Ostholstein. Aus unseren Büros in **Grömitz** und am **Marktplatz in Neustadt in Holstein** entwickeln wir digitale Lösungen, die technologische Tiefe mit intuitiver Bedienbarkeit vereinen. Unser Fokus liegt im Frontend-Bereich auf dem [Neos CMS](https://www.neos.io/) Ökosystem. Für komplexere Backends (oder Brücken) greifen wir auf Laravel zurück. Wir bauen keine WordPress Webseiten - wir entwickeln Software.
 
 ![Templado](https://www.templado.de/_Resources/Persistent/0/a/c/3/0ac30a72c10870dafae91fe33b16ea7845a0109d/templado-webagentur-ostholstein-logo-weiss-160x59.webp)
 
@@ -13,6 +15,9 @@ Wir setzen konsequent auf **Neos 9**. Wir nutzen den Event-Source-basierten Ansa
 * **Fusion & AFX.** Saubere Komponenten-Architektur statt unübersichtlicher Templates.
 * **Tailwind CSS.** Utility-First Design, das direkt in die Neos-Workflows integriert ist.
 * **Custom Extensions.** Individuelle Schnittstellen (ERP, CRM) und automatisierte Workflows.
+
+## Ansonsten: Laravel ist die Antwort auf alles
+Während Neos unsere erste Wahl für Content-Management ist, bildet Laravel das Rückgrat für alles andere. Ob komplexe Web-Applikationen, API-Schnittstellen oder unsere eigenen Plattformen wie [Vionity](https://www.prepaid-hoster.de/info/vionity.html) - wir setzen auf das Laravel-Ökosystem für maximale Skalierbarkeit.
 
 ---
 
