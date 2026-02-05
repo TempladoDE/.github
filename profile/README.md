@@ -16,18 +16,15 @@ Wir setzen konsequent auf **Neos 9**. Wir nutzen den Event-Source-basierten Ansa
 
 ---
 
-## Unsere Kern-Repositories
+## Wozu GitHub?
+Wir nutzen GitHub zur internen Verwaltung und Distribution unserer Module. Durch jahrelange Erfahrung in Neos-Projekten haben wir wiederkehrende Aufgaben identifiziert und in Modulen abstrahiert. So verlieren wir keine Zeit mit repetitivem Bootstrapping, sondern konzentrieren uns auf die individuelle Logik jedes Projekts.
 
-Um höchste Qualität zu garantieren, unterteilen wir unsere Projekte in spezialisierte Module:
+* **Templado.BaseTheme**: Das technische Fundament. Ein performantes Theme-Framework basierend auf Atomic Design und nativer Tailwind-Anbindung.
+* **Templado.Navigation**: Logik für komplexe Navigationsstrukturen, die für Redakteure einfach zu bedienen bleibt.
+* **Templado.Forms**: Modulare Formular-Komponenten, die sich nahtlos in jedes Design-System einfügen.
+* **Neos Instance Manager**: Node-basiertes Webinterface für Neos CMS Bootstrapping per SSH. Installiert automatisch Templado-Pakete und konfiguriert das Basis-Theme. 
 
-* **Templado.BaseTheme**
-Das technische Fundament. Ein performantes Theme-Framework basierend auf Atomic Design und nativer Tailwind-Anbindung.
-* **Templado.Navigation**
-Logik für komplexe Navigationsstrukturen, die für Redakteure einfach zu bedienen bleibt.
-* **Templado.Forms**
-Modulare Formular-Komponenten, die sich nahtlos in jedes Design-System einfügen.
-* **Templado.DemoTheme**
-Unsere Referenz-Implementierung. Hier führen wir alle Module zusammen, um die Möglichkeiten des "NeosBuilders" aufzuzeigen.
+\[... wird fortlaufend erweitert]
 
 ---
 
