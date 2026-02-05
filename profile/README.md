@@ -107,7 +107,7 @@ prototype(Templado.Fun:Organisms.AgencyLifecycle) < prototype(Neos.Fusion:Compon
 
 ### Templado.de
 
-![Wir nutzen Neos CMS](assets/templado-login.png)
+![Wir nutzen Neos CMS](../assets/templado-login.png)
 
 ### Prepaid-Hoster.de
 ```
