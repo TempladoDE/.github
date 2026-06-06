@@ -50,61 +50,78 @@ Lust auf einen Schnack über Neos-Entwicklung oder neue Projekte bei einem Kaffe
 ### Engineering Insight (Fusion)
 
 ```fusion
-prototype(Templado.Fun:Organisms.AgencyLifecycle) < prototype(Neos.Fusion:Component) {
-    # Mapping der Standorte auf die Logik
-    officeTitle = ${q(node).property('location') == 'markt' ? 'Neustadt in Holstein' : 'Grömitz'}
-    
-    renderer = Templado.BaseTheme:Molecules.BaseSection {
-        header = Templado.BaseTheme:Molecules.SectionTitle {
-            title = "Templado Engine v9.1"
-            subtitle = ${"Node: " + props.officeTitle}
+prototype(Templado.Quest:BaseElement.TempladoContribution) < prototype(Neos.Neos:ContentComponent) {
+        headingLevel = 'h2'
+        href = 'https://www.templado.de'
+        headingContent = "Umsetzung und Gestaltung"
+        templadoLogoUrl = "https://www.templado.de/logos/templado-logo-black.png"
+        headingClasses = ""
+        renderer = Neos.Fusion:Tag {
+                tagName = 'div'
+                content = Neos.Fusion:Join {
+                        item_1 = Neos.Fusion:Tag {
+                                tagName = ${props.headingLevel}
+                                attributes.class = ${props.headingClasses || "font-bold text-2xl"}
+                                content = ${props.headingContent}
+                        }
+                        item_3 = Neos.Fusion:Tag {
+                                tagName = 'p'
+                                content = Neos.Fusion:Tag {
+                                        tagName = 'a'
+                                        attributes.href = ${props.href}
+                                        content = Neos.Fusion:Tag {
+                                                tagName = 'img'
+                                                attributes.src = ${props.templadoLogoUrl}
+                                                attributes.alt = 'Templado Logo'
+                                                attributes.style = Neos.Fusion:Join {
+                                                        @glue = ';'
+                                                        item_1 = 'display: inline-block'
+                                                        item_2 = 'width: 240px'
+                                                        item_3 = 'margin: 0.5rem 0'
+                                                }
+                                                attributes.title = 'Templado.de Webagentur Ostholstein'
+                                                selfClosingTag = true
+                                        }
+                                }
+                        }
+                        item_2 = Neos.Fusion:Tag {
+                                tagName = 'p'
+                                content = Neos.Fusion:Tag {
+                                        tagName = 'a'
+                                        attributes.href = ${props.href}
+                                        attributes.style = 'text-decoration: underline; color: #000;'
+                                        attributes.target = '_blank'
+                                        content = 'www.Templado.de'
+                                }
+                        }
+                        item_4 = Neos.Fusion:Tag {
+                                tagName = 'p'
+                                content = Neos.Fusion:Join {
+                                        item_1 = Neos.Fusion:Tag {
+                                                tagName = "strong"
+                                                attributes.class = "inline-block text-lg"
+                                                content = 'Templado &middot; Webagentur Ostholstein'
+                                        }
+                                        item_2 = Neos.Fusion:Tag {
+                                                tagName = 'br'
+                                                selfClosingTag = true
+                                        }
+                                        item_3 = 'Cloud Center GmbH'
+                                        item_4 = Neos.Fusion:Tag {
+                                                tagName = 'br'
+                                                selfClosingTag = true
+                                        }
+                                        item_5 = 'Kurpromenade 48'
+                                        item_6 = Neos.Fusion:Tag {
+                                                tagName = 'br'
+                                                selfClosingTag = true
+                                        }
+                                        item_7 = '23743 Grömitz'
+                                }
+                        }
+                }
         }
-
-        content = Templado.BaseTheme:Molecules.Grid {
-            columns = 3
-            gap = "md"
-            
-            items = Neos.Fusion:RawArray {
-                # Vertrieb & Beratung: Moritz
-                10 = Templado.BaseTheme:Molecules.Card {
-                    heading = "Moritz"
-                    icon = "fa-duotone fa-comments-dollar"
-                    content = "Zuständig für Vertrieb, Kundenberatung und dafür, dass Projekte wirtschaftlich fliegen."
-                    customClasses = "border-l-4 border-green-500 bg-slate-800"
-                }
-
-                # Technik & Architektur: Dennis
-                20 = Templado.BaseTheme:Molecules.Card {
-                    heading = "Dennis"
-                    icon = "fa-duotone fa-microchip-ai"
-                    content = "Verantwortlich für die technische Architektur, Neos-Entwicklung und Automatisierung."
-                    customClasses = "border-l-4 border-blue-500 bg-slate-800"
-                }
-
-                # Automatisierte Prozesse
-                30 = Templado.BaseTheme:Molecules.IconList {
-                    items = Neos.Fusion:RawArray {
-                        1 = Templado.BaseTheme:Molecules.IconListItem {
-                            icon = "fa-check"
-                            text = "Google My Business Sync"
-                            customClasses = "text-green-500"
-                        }
-                        2 = Templado.BaseTheme:Molecules.IconListItem {
-                            icon = "fa-sync"
-                            text = "Echtzeit-Öffnungszeiten"
-                        }
-                        3 = Templado.BaseTheme:Molecules.IconListItem {
-                            icon = "fa-server"
-                            text = "Managed Hosting Integration"
-                        }
-                    }
-                    customClasses = "p-4 bg-slate-800 rounded border-l-4 border-purple-500"
-                }
-            }
-        }
-    }
 }
-
 ```
 
 ## Wir entwickeln mit Neos CMS - weil wir es selber nutzen!
