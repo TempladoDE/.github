@@ -50,7 +50,7 @@ Lust auf einen Schnack über Neos-Entwicklung oder neue Projekte bei einem Kaffe
 ### Engineering Insight (Fusion)
 
 ```fusion
-prototype(Templado.Quest:BaseElement.TempladoContribution) < prototype(Neos.Neos:ContentComponent) {
+prototype(Templado.Neos:BaseElement.TempladoContribution) < prototype(Neos.Neos:ContentComponent) {
         headingLevel = 'h2'
         href = 'https://www.templado.de'
         headingContent = "Umsetzung und Gestaltung"
